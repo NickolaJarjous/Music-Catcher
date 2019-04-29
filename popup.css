@@ -1,0 +1,261 @@
+@charset "UTF-8";
+.rating {
+    width: 120px;
+}
+.rating > * {
+    float: right;
+}
+@-webkit-keyframes pulse {
+    50% {
+        color: #5e5e5e;
+        text-shadow: 0 0 15px #777777;
+    }
+}
+@keyframes pulse {
+    50% {
+        color: #5e5e5e;
+        text-shadow: 0 0 15px #777777;
+    }
+}
+.rating label {
+    height: 10px;
+    width: 20%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.rating label:nth-of-type(5):after {
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+.rating label:nth-of-type(4):after {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.rating label:nth-of-type(3):after {
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+.rating label:nth-of-type(2):after {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+.rating label:nth-of-type(1):after {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+}
+.rating label:after {
+    margin-bottom: 20px;
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 30px;
+    -webkit-animation: 1s pulse ease;
+    animation: 1s pulse ease;
+}
+.rating label:hover:after {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+.rating input {
+    display: none;
+}
+.rating input:checked + label:after,
+.rating input:checked ~ label:after {
+    content: "★";
+    color: #F9BF3B;
+    text-shadow: 0 0 20px #F9BF3B;
+}
+
+
+.nameStyle {
+     display: inline-block;
+     margin-top: 2px;
+     color:white;
+     width: 240px;
+     font-size: 17px;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+ }
+
+.dateClass {
+    margin-left: 12px;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-top: 41px;
+    color:black;
+    font-size: 9px;
+    overflow: hidden;
+}
+
+table.verTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.horTable {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+}
+
+
+.imgStyle {
+    width: 130px;
+    height: 110px;
+}
+
+
+.btn {
+    font-size: 10px;
+    margin-top: 27px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #00e63a 0%, rgba(119, 114, 123, 0.11) 100%);
+    transition: .4s;
+}
+
+.btn1 {
+    font-size: 10px;
+    margin-top: 27px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #ff3deb 0%, rgba(119, 114, 123, 0.11) 100%);
+    transition: .4s;
+}
+
+.btn2 {
+    font-size: 10px;
+    margin-top: 27px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #ff445e 0%, rgba(119, 114, 123, 0.11) 100%);
+    transition: .4s;
+}
+
+.btn:hover{
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.btn1:hover{
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.btn2:hover{
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+
+
+
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar2 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show {
+    visibility: visible !important; /* Show the snackbar */
+
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+
+body {
+    overflow-x: hidden;
+    background: rgba(79, 79, 79, 0.78);
+}
+
+td, th {
+    vertical-align:top;
+}
+

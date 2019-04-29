@@ -1,0 +1,34 @@
+{
+  "name": "Music Catcher",
+  "version": "1.0",
+  "description": "Remembers Your Songs for you",
+  "manifest_version": 2,
+  "background": {
+    "persistent":true,
+    "page":"bg.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": [
+        "require.js",
+        "app.js"
+      ]
+    }
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://www.youtube.com/*",
+    "background",
+    "storage",
+    "webNavigation"
+  ],
+  "web_accessible_resources": [
+    "*",
+    "localstoragedb/*"
+  ]
+}
