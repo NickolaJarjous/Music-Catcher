@@ -1,0 +1,52 @@
+{
+  "_from": "localstoragedb",
+  "_id": "localstoragedb@2.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-OvRGY7CE0M/RL++3oqKKXax9OCtcQGFHyUzjlmeILB2rRP2Ebk8TMojZ2EWsfuUGyN8+Yr7FV35kXgl0q8Yxow==",
+  "_location": "/localstoragedb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "localstoragedb",
+    "name": "localstoragedb",
+    "escapedName": "localstoragedb",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/localstoragedb/-/localstoragedb-2.3.2.tgz",
+  "_shasum": "5ed923e218aa8a0cd840479ae6f906a2a36c6122",
+  "_spec": "localstoragedb",
+  "_where": "C:\\Program Files\\nodejs",
+  "author": {
+    "name": "Kailash Nadh",
+    "email": "kailash.nadh@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/knadh/localStorageDB/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "localStorageDB is a simple layer over localStorage (and sessionStorage) that provides a set of functions to store structured data like databases and tables. It provides basic insert/update/delete/query capabilities. localStorageDB has no dependencies, and is not based on WebSQL. Underneath it all, the structured data is stored as serialized JSON in localStorage or sessionStorage.",
+  "devDependencies": {},
+  "homepage": "https://github.com/knadh/localStorageDB",
+  "keywords": [
+    "localStorage",
+    "database"
+  ],
+  "license": "MIT",
+  "main": "localstoragedb.js",
+  "name": "localstoragedb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knadh/localStorageDB.git"
+  },
+  "scripts": {},
+  "version": "2.3.2"
+}
